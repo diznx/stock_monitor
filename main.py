@@ -9,8 +9,8 @@ tickersymbol2 = 'GME'
 tickerData1 = yfinance.Ticker(tickersymbol1)
 tickerData2 = yfinance.Ticker(tickersymbol2)
 
-tickerDf1 = tickerData1.history(interval='1m')
-tickerDf2 = tickerData2.history(interval='1m')
+tickerDf1 = tickerData1.info['regularMarketPrice']
+tickerDf2 = tickerData2.info['regularMarketPrice']
 
 #main application window
 root = tkinter.Tk()
