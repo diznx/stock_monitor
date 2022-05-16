@@ -15,7 +15,7 @@ tickerDf2 = tickerData2.info['regularMarketPrice']
 
 #main application window
 root = tkinter.Tk()
-root.title("stonk monitor")
+root.title("stock monitor")
 
 
 #creates a content frame
